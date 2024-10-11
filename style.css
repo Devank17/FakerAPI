@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main {
+  width: 70vw;
+  border: 2px solid white;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head {
+  margin: 15px;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+}
+
+.resources h3 {
+  margin-bottom: 13px;
+}
+
+.resources select {
+  width: 100%;
+  padding: 12px 6px 12px 6px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.resources select:hover {
+  border: 1px solid yellowgreen;
+}
+
+.add {
+  margin-top: 25px;
+  width: 50%;
+}
+
+.add .semi-head {
+  margin-bottom: 13px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 0px 13px 0px;
+}
+
+.flex input {
+  caret-color: rgb(17, 196, 172);
+  border: 1px solid rgb(50 49 56);
+  background-color: rgb(21 21 31);
+  border-radius: 4px;
+  padding: 12px 6px 12px 6px;
+  font-size: 16px;
+}
+
+.flex input:hover {
+  border: 1px solid rgb(145, 199, 36);
+}
+
+.flex input:focus {
+  outline: none;
+}
+
+.flex label {
+  font-size: 17px;
+}
+
+.btn {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn img {
+  background-color: inherit;
+  padding-right: 7px;
+}
+
+.btn button {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  width: 155px;
+  height: 45px;
+  color: black;
+  background-color: rgb(0 255 143);
+}
+
+.btn button:hover {
+  background-color: cornflowerblue;
+}
+
+
+.hide{
+    display: none;
+}
+
+.result{
+  width: 80vw;
+  height: 80vh;
+  border: 2px solid white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+  -webkit-box-shadow: 0 0 0px 1000px rgb(21 21 31) inset; /* Background color of autofill */
+    -webkit-text-fill-color: #ffffff; /* Text color of autofill */
+    transition: background-color 5000s ease-in-out 0s;
+}

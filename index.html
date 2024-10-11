@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div class="head">
+        <h1>Generate Fake Details</h1>
+      </div>
+
+      <div class="resources">
+        <h3>Resources</h3>
+        <select id="res-list">
+          <option value="addresses">Addresses</option>
+          <option value="books">Books</option>
+          <option value="companies">Companies</option>
+          <option value="creditCards">Credit Cards</option>
+          <option value="images">Images</option>
+          <option value="persons">Person</option>
+          <option value="places">Places</option>
+          <option value="products">Products</option>
+          <option value="texts">Text</option>
+          <option value="users">Users</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+
+      <div class="add">
+        <div class="semi-head">
+          <h3>Additional Parameters</h3>
+        </div>
+        <div class="flex">
+          <div><label for="qty">_quantity</label></div>
+          <div><input type="text" id="qty" /></div>
+        </div>
+        <div class="flex">
+          <div><label for="locale">_locale</label></div>
+          <div><input type="text" id="locale" /></div>
+        </div>
+        <div class="flex">
+          <div><label for="seed">_seed</label></div>
+          <div><input type="text" id="seed" /></div>
+        </div>
+        <div class="flex hide" id="add_coun">
+          <div><label for="country">_country_code</label></div>
+          <div><input type="text" id="country" /></div>
+        </div>
+        <div class="flex hide" id="imgtype">
+          <div><label for="type">_type</label></div>
+          <div><input type="text" id="img_type"/></div>
+        </div>
+        <div class="flex hide" id="img_width">
+          <div><label for="width">_width</label></div>
+          <div><input type="text" id="width" /></div>
+        </div>
+        <div class="flex hide" id="img_height">
+          <div><label for="height">_height</label></div>
+          <div><input type="text" id="height" /></div>
+        </div>
+        <div class="flex hide" id="per_gen">
+          <div><label for="gender">_gender</label></div>
+          <div><input type="text" id="gender" /></div>
+        </div>
+        <div class="flex hide" id="per_bdaystart">
+          <div><label for="birthday-start">_birthday_start</label></div>
+          <div><input type="text" id="birthday-start" /></div>
+        </div>
+        <div class="flex hide" id="per_bdayend">
+          <div><label for="birthday-end">_birthday_end</label></div>
+          <div><input type="text" id="birthday-end" /></div>
+        </div>
+        <div class="flex hide" id="pro_min">
+          <div><label for="pmin">_price_min</label></div>
+          <div><input type="text" id="min" /></div>
+        </div>
+        <div class="flex hide" id="pro_max">
+          <div><label for="pmax">_price_max</label></div>
+          <div><input type="text" id="max" /></div>
+        </div>
+        <div class="flex hide" id="pro_tax">
+          <div><label for="taxes">_taxes</label></div>
+          <div><input type="text" id="taxes" /></div>
+        </div>
+        <div class="flex hide" id="pro_type">
+          <div><label for="pcategory">_categories_type</label></div>
+          <div><input type="text" id="pcategory" /></div>
+        </div>
+        <div class="flex hide" id="user_char">
+          <div><label for="char">_characters</label></div>
+          <div><input type="text" id="char" /></div>
+        </div>
+
+        <div class="btn">
+          <button><img src="icon.svg" alt="" />Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
