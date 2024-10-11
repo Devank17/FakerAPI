@@ -67,8 +67,6 @@ async function req(url) {
 function address() {
   url = `${url}${listVal.value}?_quantity=${qty.value}&_locale=${locale.value}&_seed=${seed.value}&_country_code=${country_code.value}`;
 
-  console.log(url);
-
   req(url);
 }
 
@@ -82,13 +80,11 @@ function books() {
 function companies() {
   url = `${url}${listVal.value}?_quantity=${qty.value}&_locale=${locale.value}&_seed=${seed.value}`;
 
-  console.log(url);
   req(url);
 }
 function creditCards() {
   url = `${url}${listVal.value}?_quantity=${qty.value}&_locale=${locale.value}&_seed=${seed.value}`;
 
-  console.log(url);
   req(url);
 }
 function images() {
@@ -100,7 +96,6 @@ function images() {
     document.querySelector("#height").value
   }`;
 
-  console.log(url);
   req(url);
 }
 function persons() {
@@ -112,14 +107,12 @@ function persons() {
     document.querySelector("#birthday-start").value
   }&_birthday_end=${document.querySelector("#birthday-end").value}`;
 
-  console.log(url);
   req(url);
 }
 
 function places() {
   url = `${url}${listVal.value}?_quantity=${qty.value}&_locale=${locale.value}&_seed=${seed.value}`;
 
-  console.log(url);
   req(url);
 }
 
@@ -132,7 +125,6 @@ function products() {
     document.querySelector("#taxes").value
   }&_categories_type=${document.querySelector("#pcategory").value}`;
 
-  console.log(url);
   req(url);
 }
 
@@ -143,7 +135,6 @@ function texts() {
     document.querySelector("#char").value
   }`;
 
-  console.log(url);
   req(url);
 }
 function users() {
@@ -151,7 +142,6 @@ function users() {
     locale.value
   }&_seed=${seed.value}&_gender=${document.querySelector("#gender").value}`;
 
-  console.log(url);
   req(url);
 }
 
