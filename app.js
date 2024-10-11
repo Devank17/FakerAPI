@@ -73,7 +73,6 @@ function address() {
 function books() {
   url = `${url}${listVal.value}?_quantity=${qty.value}&_locale=${locale.value}&_seed=${seed.value}`;
 
-  console.log(url);
   req(url);
 }
 
